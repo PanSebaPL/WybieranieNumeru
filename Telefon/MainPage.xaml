@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telefon.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Column="0" Grid.Row="0"
+                    Text="000"
+                    x:Name="Number"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                    FontSize="18"
+                    HorizontalOptions="Center" />
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Grid.Row="0"
+                    x:Name="Delete"
+                    Text="D="
+                    SemanticProperties.Hint="DeleteClick"
+                    Clicked="OnDeleteClicked"
+                    WidthRequest="50"
+                    HeightRequest="20"
+                    />
+                </Grid>
+            </Grid>
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Grid.Row="0"
+                x:Name="ButtonOne"
+                Text="1"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnOneClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="1" Grid.Row="0"
+                x:Name="ButtonTwo"
+                Text="2"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnTwoClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="2" Grid.Row="0"
+                x:Name="ButtonThree"
+                Text="3"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnThreeClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="0" Grid.Row="1"
+                x:Name="ButtonFour"
+                Text="4"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnFourClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="1" Grid.Row="1"
+                x:Name="ButtonFive"
+                Text="5"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnFiveClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="2" Grid.Row="1"
+                x:Name="ButtonSix"
+                Text="6"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnSixClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="0" Grid.Row="2"
+                x:Name="ButtonSeven"
+                Text="7"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnSevenClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="1" Grid.Row="2"
+                x:Name="ButtonEight"
+                Text="8"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnEightClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="2" Grid.Row="2"
+                x:Name="ButtonNine"
+                Text="9"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnNineClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="1" Grid.Row="3"
+                x:Name="ButtonZero"
+                Text="0"
+                SemanticProperties.Hint="NumberClick"
+                Clicked="OnZeroClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="0" Grid.Row="3"
+                x:Name="ButtonStar"
+                Text="*"
+                SemanticProperties.Hint="CharClick"
+                Clicked="OnStarClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="2" Grid.Row="3"
+                x:Name="ButtonHash"
+                Text="#"
+                SemanticProperties.Hint="CharClick"
+                Clicked="OnHashClicked"
+                WidthRequest="60"
+                HeightRequest="40"
+                CornerRadius="20"
+                />
+                <Button Grid.Column="1" Grid.Row="4"
+                x:Name="ButtonCall"
+                Text="📞"
+                SemanticProperties.Hint="CallClick"
+                BackgroundColor="Green"
+                Clicked="OnCallClicked"
+                WidthRequest="50"
+                HeightRequest="50"
+                CornerRadius="60"
+                />
+
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
