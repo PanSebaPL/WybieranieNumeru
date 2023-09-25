@@ -139,8 +139,7 @@
             else
                 Number.Text += "9";
             Count++;
-            if (Count % 3 == 0)
-                Number.Text += " ";
+ 
             SemanticScreenReader.Announce(Number.Text);
 
         }
@@ -200,9 +199,9 @@
                 Number.Text += "#";
             SemanticScreenReader.Announce(Number.Text);
         }
-        private void OnCallClicked(object sender, EventArgs e)
+        private async void OnCallClicked(object sender, EventArgs e)
         {
-
+            await DisplayAlert("Dzwonienie", Number.Text, "OK");
         }
     }
 }
